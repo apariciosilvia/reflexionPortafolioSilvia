@@ -1,0 +1,30 @@
+.letter {
+    display: inline-block;
+    animation: slideUp 1s ease-in-out infinite;
+    background-image: linear-gradient(to right, rgb(221, 185, 241), #609acc); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.title .letter:nth-child(odd) {
+    animation-delay: 0.1s;
+}
+
+.title .letter:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
